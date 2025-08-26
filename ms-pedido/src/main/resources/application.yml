@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: ms-pedido
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:123456@localhost:7071
+
+  main:
+    allow-bean-definition-overriding: true
